@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="13" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-04T17:44:07 GMT" name="Suite" finished-at="2023-03-04T17:45:06 GMT" duration-ms="58675">
+  <suite started-at="2023-03-05T13:15:54 GMT" name="Suite" finished-at="2023-03-05T13:18:00 GMT" duration-ms="125643">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-03-04T17:44:07 GMT" name="Test" finished-at="2023-03-04T17:45:06 GMT" duration-ms="58675">
+    <test started-at="2023-03-05T13:15:54 GMT" name="Test_In_Chrome" finished-at="2023-03-05T13:16:53 GMT" duration-ms="59099">
       <class name="com.hudl.testcases.Tests_LoginModule">
-        <test-method is-config="true" signature="beginReport()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:07 GMT" name="beginReport" finished-at="2023-03-04T17:44:07 GMT" duration-ms="458" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beginReport -->
-        <test-method is-config="true" signature="setValues()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:07 GMT" name="setValues" finished-at="2023-03-04T17:44:07 GMT" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:15:54 GMT" name="setValues" finished-at="2023-03-05T13:15:54 GMT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:07 GMT" name="setUpClass" finished-at="2023-03-04T17:44:08 GMT" duration-ms="559" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:15:54 GMT" name="setUpClass" finished-at="2023-03-05T13:15:55 GMT" duration-ms="530" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="report()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:08 GMT" name="report" finished-at="2023-03-04T17:44:08 GMT" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:15:55 GMT" name="report" finished-at="2023-03-05T13:15:55 GMT" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method is-config="true" signature="initiateApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:08 GMT" name="initiateApp" finished-at="2023-03-04T17:44:15 GMT" duration-ms="7321" status="PASS">
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:15:55 GMT" name="initiateApp" finished-at="2023-03-05T13:16:02 GMT" duration-ms="7587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateApp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:15 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-04T17:44:26 GMT" duration-ms="11241" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:02 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:16:12 GMT" duration-ms="9919" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,15 +50,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:26 GMT" name="closeApp" finished-at="2023-03-04T17:44:27 GMT" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:12 GMT" name="closeApp" finished-at="2023-03-05T13:16:13 GMT" duration-ms="324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="initiateApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:27 GMT" name="initiateApp" finished-at="2023-03-04T17:44:31 GMT" duration-ms="4198" status="PASS">
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:13 GMT" name="initiateApp" finished-at="2023-03-05T13:16:16 GMT" duration-ms="3100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateApp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:31 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-04T17:44:35 GMT" duration-ms="4092" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:16 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:16:19 GMT" duration-ms="3497" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,15 +81,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:35 GMT" name="closeApp" finished-at="2023-03-04T17:44:35 GMT" duration-ms="271" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:19 GMT" name="closeApp" finished-at="2023-03-05T13:16:19 GMT" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="initiateApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:35 GMT" name="initiateApp" finished-at="2023-03-04T17:44:39 GMT" duration-ms="3682" status="PASS">
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:19 GMT" name="initiateApp" finished-at="2023-03-05T13:16:22 GMT" duration-ms="3013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateApp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:39 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-04T17:44:43 GMT" duration-ms="4183" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:22 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:16:26 GMT" duration-ms="3498" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,15 +112,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:43 GMT" name="closeApp" finished-at="2023-03-04T17:44:43 GMT" duration-ms="194" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:26 GMT" name="closeApp" finished-at="2023-03-05T13:16:26 GMT" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="initiateApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:43 GMT" name="initiateApp" finished-at="2023-03-04T17:44:47 GMT" duration-ms="3508" status="PASS">
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:26 GMT" name="initiateApp" finished-at="2023-03-05T13:16:29 GMT" duration-ms="2980" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateApp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:47 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-04T17:44:51 GMT" duration-ms="3998" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:29 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:16:32 GMT" duration-ms="2957" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,15 +143,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:51 GMT" name="closeApp" finished-at="2023-03-04T17:44:51 GMT" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:32 GMT" name="closeApp" finished-at="2023-03-05T13:16:32 GMT" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="initiateApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:51 GMT" name="initiateApp" finished-at="2023-03-04T17:44:55 GMT" duration-ms="3788" status="PASS">
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:32 GMT" name="initiateApp" finished-at="2023-03-05T13:16:35 GMT" duration-ms="2912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateApp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:55 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-04T17:44:58 GMT" duration-ms="3059" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:35 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:16:38 GMT" duration-ms="2683" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -142,15 +174,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:58 GMT" name="closeApp" finished-at="2023-03-04T17:44:58 GMT" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:38 GMT" name="closeApp" finished-at="2023-03-05T13:16:38 GMT" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="initiateApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:44:58 GMT" name="initiateApp" finished-at="2023-03-04T17:45:02 GMT" duration-ms="3757" status="PASS">
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:38 GMT" name="initiateApp" finished-at="2023-03-05T13:16:41 GMT" duration-ms="3412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateApp -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:45:02 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-04T17:45:06 GMT" duration-ms="3836" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:41 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:16:44 GMT" duration-ms="2919" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -166,19 +205,334 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:45:06 GMT" name="closeApp" finished-at="2023-03-04T17:45:06 GMT" duration-ms="214" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:44 GMT" name="closeApp" finished-at="2023-03-05T13:16:44 GMT" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:45:06 GMT" name="tearDownClass" finished-at="2023-03-04T17:45:06 GMT" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:44 GMT" name="initiateApp" finished-at="2023-03-05T13:16:47 GMT" duration-ms="2932" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateApp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:47 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:16:53 GMT" duration-ms="5947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the navigation from login page to Website page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login functionality of Hudl.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:53 GMT" name="closeApp" finished-at="2023-03-05T13:16:53 GMT" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@6221a451]" started-at="2023-03-05T13:16:53 GMT" name="tearDownClass" finished-at="2023-03-05T13:16:53 GMT" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@28261e8e]" started-at="2023-03-04T17:45:06 GMT" name="endReport" finished-at="2023-03-04T17:45:07 GMT" duration-ms="714" status="PASS">
+      </class> <!-- com.hudl.testcases.Tests_LoginModule -->
+    </test> <!-- Test_In_Chrome -->
+    <test started-at="2023-03-05T13:16:53 GMT" name="Test_In_Edge" finished-at="2023-03-05T13:18:00 GMT" duration-ms="66509">
+      <class name="com.hudl.testcases.Tests_LoginModule">
+        <test-method is-config="true" signature="beginReport()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:15:54 GMT" name="beginReport" finished-at="2023-03-05T13:15:54 GMT" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginReport -->
+        <test-method is-config="true" signature="setValues()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:16:53 GMT" name="setValues" finished-at="2023-03-05T13:16:53 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:16:53 GMT" name="setUpClass" finished-at="2023-03-05T13:16:53 GMT" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="report()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:16:53 GMT" name="report" finished-at="2023-03-05T13:16:53 GMT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:16:53 GMT" name="initiateApp" finished-at="2023-03-05T13:16:59 GMT" duration-ms="5417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateApp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:16:59 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:17:06 GMT" duration-ms="7251" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the login page of Hudl.com with valid email and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login functionality of Hudl.com]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: headless MicrosoftEdge=110.0.1587.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f45251f2af587b5ef04b6a3744f2e2bc, actions {actions=[org.openqa.selenium.interactions.Sequence@2b7facc7]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.63, ms:edgeOptions: {debuggerAddress: localhost:54880}, msedge: {msedgedriverVersion: 110.0.1587.63 (b26c9b8fc01e..., userDataDir: C:\Users\17kri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54880/devtoo..., se:cdpVersion: 110.0.1587.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f45251f2af587b5ef04b6a3744f2e2bc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: headless MicrosoftEdge=110.0.1587.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f45251f2af587b5ef04b6a3744f2e2bc, actions {actions=[org.openqa.selenium.interactions.Sequence@2b7facc7]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.63, ms:edgeOptions: {debuggerAddress: localhost:54880}, msedge: {msedgedriverVersion: 110.0.1587.63 (b26c9b8fc01e..., userDataDir: C:\Users\17kri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54880/devtoo..., se:cdpVersion: 110.0.1587.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f45251f2af587b5ef04b6a3744f2e2bc
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+at com.hudl.selenium.basemethods.BaseMethods.hoverAction(BaseMethods.java:299)
+at com.hudl.steps.pages.HomePage.logout(HomePage.java:18)
+at ✽.User must logout(file:///C:/Users/17kri/eclipse-workspace/hudleAutomation/src/main/java/features/Login.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:06 GMT" name="closeApp" finished-at="2023-03-05T13:17:06 GMT" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:06 GMT" name="initiateApp" finished-at="2023-03-05T13:17:11 GMT" duration-ms="4665" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateApp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:11 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:17:15 GMT" duration-ms="3502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the login functionality for invalid email and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login functionality of Hudl.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:15 GMT" name="closeApp" finished-at="2023-03-05T13:17:15 GMT" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:15 GMT" name="initiateApp" finished-at="2023-03-05T13:17:19 GMT" duration-ms="4521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateApp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:19 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:17:22 GMT" duration-ms="3108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the login functionality for invalid email and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login functionality of Hudl.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:22 GMT" name="closeApp" finished-at="2023-03-05T13:17:23 GMT" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:23 GMT" name="initiateApp" finished-at="2023-03-05T13:17:28 GMT" duration-ms="4997" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateApp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:28 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:17:31 GMT" duration-ms="3448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if the links in the Login page are accessible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login functionality of Hudl.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:31 GMT" name="closeApp" finished-at="2023-03-05T13:17:31 GMT" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:31 GMT" name="initiateApp" finished-at="2023-03-05T13:17:36 GMT" duration-ms="4841" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateApp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:36 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:17:39 GMT" duration-ms="2824" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if the links in the Login page are accessible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login functionality of Hudl.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:39 GMT" name="closeApp" finished-at="2023-03-05T13:17:39 GMT" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:39 GMT" name="initiateApp" finished-at="2023-03-05T13:17:44 GMT" duration-ms="4774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateApp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:44 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:17:48 GMT" duration-ms="3614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate if the links in the Login page are accessible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login functionality of Hudl.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:48 GMT" name="closeApp" finished-at="2023-03-05T13:17:48 GMT" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="initiateApp(java.lang.String)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:48 GMT" name="initiateApp" finished-at="2023-03-05T13:17:53 GMT" duration-ms="4906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateApp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:17:53 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-05T13:18:00 GMT" duration-ms="7107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the navigation from login page to Website page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login functionality of Hudl.com]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:18:00 GMT" name="closeApp" finished-at="2023-03-05T13:18:00 GMT" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:18:00 GMT" name="tearDownClass" finished-at="2023-03-05T13:18:00 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.hudl.testcases.Tests_LoginModule@11392934]" started-at="2023-03-05T13:18:00 GMT" name="endReport" finished-at="2023-03-05T13:18:00 GMT" duration-ms="504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- com.hudl.testcases.Tests_LoginModule -->
-    </test> <!-- Test -->
+    </test> <!-- Test_In_Edge -->
   </suite> <!-- Suite -->
 </testng-results>

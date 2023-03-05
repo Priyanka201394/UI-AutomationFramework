@@ -1,8 +1,10 @@
 package com.hudl.selenium.basemethods;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -13,8 +15,9 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,29 +30,45 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.Reporter;
 
 public class BaseMethods extends Reporter implements BrowserActions , ElementActions  {
+	public String usermail,websiteUrl,password;
+	public BaseMethods() {
+		Properties prop = new Properties();
+		try {
+			
+			prop.load(new FileInputStream(new File("./src/main/java/config.properties")));
+			usermail = prop.getProperty("useremail");
+			websiteUrl = prop.getProperty("WebsiteUrl");
+			password = prop.getProperty("password");
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
 	public static RemoteWebDriver driver;
 
 
-	public void startApp(String browser, String url) {
+	public RemoteWebDriver startApp(String browser,  String url) {
 		try {
 			if(browser.equalsIgnoreCase("chrome")) {
+				System.setProperty("webdriver.chrome.silentOutput", "true");
+				ChromeOptions opt = new ChromeOptions();
+				opt.addArguments("--headless");
 				WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver();
-			} else if(browser.equalsIgnoreCase("firefox")) {
-				WebDriverManager.firefoxdriver().setup();
-				driver = new FirefoxDriver();
-			} else if(browser.equalsIgnoreCase("ie")) {
-				WebDriverManager.iedriver().setup();
-				driver = new InternetExplorerDriver();
+				driver = new ChromeDriver(opt);
+			} else if(browser.equalsIgnoreCase("edge")) {
+				System.setProperty("webdriver.edge.silentOutput", "true");
+				EdgeOptions opt = new EdgeOptions();
+				opt.addArguments("--headless");
+				WebDriverManager.edgedriver().setup();
+				driver = new EdgeDriver(opt);
 			}
 			driver.navigate().to(url);
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		} catch (Exception e) {
 			reportStep("The Browser Could not be Launched. Hence Failed", "fail");
 			throw new RuntimeException();
 		} 
-//		return driver;
+		return driver;
 	}
 
 	@Override

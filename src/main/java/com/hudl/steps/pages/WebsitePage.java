@@ -8,9 +8,10 @@ import io.cucumber.java.en.Given;
 public class WebsitePage extends ProjectSpecificMethods {
 	
 	
-	@Given("The user is on the page {string}")
-	public WebsitePage hudlPageCheck(String url) {
-		verifyUrl(url);
+	@Given("The user is on the Hudl website page")
+	public WebsitePage hudlPageCheck() {
+		verifyUrl(websiteUrl);
+		reportStep("The user landed on the Hudl website page","Pass");
 		return this;
 		
 	}

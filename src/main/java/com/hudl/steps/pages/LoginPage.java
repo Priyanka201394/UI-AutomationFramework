@@ -12,20 +12,32 @@ public class LoginPage extends ProjectSpecificMethods {
 		verifyTitle("Log In");
 	}
 	
-	@Given("Enter the email {string}")
-	public LoginPage enterUserName(String data) {
-		clearAndType(locateElement("id","email"), data);
-		reportStep("The username "+data+ " is entered","Pass");
-		return this;
-		
+	@Given("Enter the valid email")
+	public LoginPage enterUserName() {
+		clearAndType(locateElement("id","email"), usermail);
+		reportStep("The username "+usermail+ " is entered","Pass");
+		return this;	
 	}
 	
-	@Given("Enter the password {string}")
-	public LoginPage enterPassword(String data) {
-		clearAndType(locateElement("id","password"), data);
-		reportStep("The username "+data+ " is entered","Pass");
-		return this;
-		
+	@Given("Enter the valid password")
+	public LoginPage enterPassword() {
+		clearAndType(locateElement("id","password"), password);
+		reportStep("The username "+password+ " is entered","Pass");
+		return this;	
+	}
+	
+	@Given("Enter the invalid email {string}")
+	public LoginPage enterInvalidUserName(String email) {
+		clearAndType(locateElement("id","email"), email);
+		reportStep("The username "+email+ " is entered","Pass");
+		return this;	
+	}
+	
+	@Given("Enter the invalid password {string}")
+	public LoginPage enterInvalidPassword(String pwd) {
+		clearAndType(locateElement("id","password"), pwd);
+		reportStep("The username "+pwd+ " is entered","Pass");
+		return this;	
 	}
 	
 	@When("Click on the login")
@@ -44,7 +56,6 @@ public class LoginPage extends ProjectSpecificMethods {
 	
 	@Given("Clicks on the link {string}")
 	public void clickLink(String link) {
-		System.out.println("//a[text()="+link+"]");
 		click(locateElement("xpath","//*[text()='"+link+"']"));
 		reportStep("The "+link+ " is clicked","Pass");
 	}
@@ -53,6 +64,20 @@ public class LoginPage extends ProjectSpecificMethods {
 	public void desiredPage(String url) {
 		verifyUrl(url);
 		reportStep("The desired page is obatined","Pass");
+	}
+	
+	@Given("Clicks on the back arrow in the login page")
+	public WebsitePage backArrowToWebsitePage() {
+		click(locateElement("xpath","//*[text()='Sign up']/preceding::a"));
+		reportStep("The user landed on the Hudl website page","Pass");
+		return new WebsitePage();
+	}
+	
+	@Given("The user clicks on the Hudl logo in the login page")
+	public WebsitePage logoClickToWebsitePage() {
+		click(locateElement("xpath","//*[text()='Sign up']/following::a"));
+		reportStep("The user landed on the Hudl website page","Pass");
+		return new WebsitePage();
 	}
 
 }

@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the login page of Hudl.com with valid email and password&quot;, &quot;Optional[Login functionality o...)">runScenario("Validate the login page of Hudl.com with valid email and password", "Optional[Login functionality o...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +118,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the login functionality for invalid email and password&quot;, &quot;Optional[Login functionality of ...)">runScenario("Validate the login functionality for invalid email and password", "Optional[Login functionality of ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate if the links in the Login page are accessible&quot;, &quot;Optional[Login functionality of Hudl.com]...)">runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate if the links in the Login page are accessible&quot;, &quot;Optional[Login functionality of Hudl.com]...)">runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the navigation from login page to Website page&quot;, &quot;Optional[Login functionality of Hudl.com...)">runScenario("Validate the navigation from login page to Website page", "Optional[Login functionality of Hudl.com...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -119,6 +138,16 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the login functionality for invalid email and password&quot;, &quot;Optional[Login functionality of ...)">runScenario("Validate the login functionality for invalid email and password", "Optional[Login functionality of ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the login functionality for invalid email and password&quot;, &quot;Optional[Login functionality of ...)">runScenario("Validate the login functionality for invalid email and password", "Optional[Login functionality of ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate if the links in the Login page are accessible&quot;, &quot;Optional[Login functionality of Hudl.com]...)">runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -130,6 +159,26 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate if the links in the Login page are accessible&quot;, &quot;Optional[Login functionality of Hudl.com]...)">runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the login functionality for invalid email and password&quot;, &quot;Optional[Login functionality of ...)">runScenario("Validate the login functionality for invalid email and password", "Optional[Login functionality of ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate if the links in the Login page are accessible&quot;, &quot;Optional[Login functionality of Hudl.com]...)">runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate if the links in the Login page are accessible&quot;, &quot;Optional[Login functionality of Hudl.com]...)">runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hudl.testcases.Tests_LoginModule" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the navigation from login page to Website page&quot;, &quot;Optional[Login functionality of Hudl.com...)">runScenario("Validate the navigation from login page to Website page", "Optional[Login functionality of Hudl.com...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -144,6 +193,48 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.hudl.testcases.Tests_LoginModule</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate the login page of Hudl.com with valid email and password&quot;, &quot;Optional[Login functionality o...)">
+                  </a> <!-- runScenario("Validate the login page of Hudl.com with valid email and password", "Optional[Login functionality o...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate the login page of Hudl.com with valid email and password", "Optional[Login functionality of Hudl.com]")</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: headless MicrosoftEdge=110.0.1587.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [f45251f2af587b5ef04b6a3744f2e2bc, actions {actions=[org.openqa.selenium.interactions.Sequence@2b7facc7]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.63, ms:edgeOptions: {debuggerAddress: localhost:54880}, msedge: {msedgedriverVersion: 110.0.1587.63 (b26c9b8fc01e..., userDataDir: C:\Users\17kri\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54880/devtoo..., se:cdpVersion: 110.0.1587.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f45251f2af587b5ef04b6a3744f2e2bc
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+	at com.hudl.selenium.basemethods.BaseMethods.hoverAction(BaseMethods.java:299)
+	at com.hudl.steps.pages.HomePage.logout(HomePage.java:18)
+	at ✽.User must logout(file:///C:/Users/17kri/eclipse-workspace/hudleAutomation/src/main/java/features/Login.feature:11)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -152,10 +243,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Validate the login functionality for invalid email and password&quot;, &quot;Optional[Login functionality of ...)">
-                  </a> <!-- runScenario("Validate the login functionality for invalid email and password", "Optional[Login functionality of ...) -->
+                  <a name="runScenario(&quot;Validate if the links in the Login page are accessible&quot;, &quot;Optional[Login functionality of Hudl.com]...)">
+                  </a> <!-- runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate the login functionality for invalid email and password", "Optional[Login functionality of Hudl.com]")</span>
+                  <span class="parameters">("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -166,6 +257,16 @@
                   </a> <!-- runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate the navigation from login page to Website page&quot;, &quot;Optional[Login functionality of Hudl.com...)">
+                  </a> <!-- runScenario("Validate the navigation from login page to Website page", "Optional[Login functionality of Hudl.com...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate the navigation from login page to Website page", "Optional[Login functionality of Hudl.com]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -182,6 +283,26 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Validate the login functionality for invalid email and password&quot;, &quot;Optional[Login functionality of ...)">
+                  </a> <!-- runScenario("Validate the login functionality for invalid email and password", "Optional[Login functionality of ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate the login functionality for invalid email and password", "Optional[Login functionality of Hudl.com]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate the login functionality for invalid email and password&quot;, &quot;Optional[Login functionality of ...)">
+                  </a> <!-- runScenario("Validate the login functionality for invalid email and password", "Optional[Login functionality of ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate the login functionality for invalid email and password", "Optional[Login functionality of Hudl.com]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Validate if the links in the Login page are accessible&quot;, &quot;Optional[Login functionality of Hudl.com]...)">
                   </a> <!-- runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...) -->
                   <span class="method-name">runScenario</span>
@@ -210,6 +331,46 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate the login functionality for invalid email and password&quot;, &quot;Optional[Login functionality of ...)">
+                  </a> <!-- runScenario("Validate the login functionality for invalid email and password", "Optional[Login functionality of ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate the login functionality for invalid email and password", "Optional[Login functionality of Hudl.com]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate if the links in the Login page are accessible&quot;, &quot;Optional[Login functionality of Hudl.com]...)">
+                  </a> <!-- runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate if the links in the Login page are accessible&quot;, &quot;Optional[Login functionality of Hudl.com]...)">
+                  </a> <!-- runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate the navigation from login page to Website page&quot;, &quot;Optional[Login functionality of Hudl.com...)">
+                  </a> <!-- runScenario("Validate the navigation from login page to Website page", "Optional[Login functionality of Hudl.com...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate the navigation from login page to Website page", "Optional[Login functionality of Hudl.com]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -222,11 +383,18 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Test_In_Chrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.hudl.testcases.Tests_LoginModule&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Test_In_Chrome --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Test_In_Edge&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.hudl.testcases.Tests_LoginModule&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test_In_Edge --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -238,7 +406,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test_In_Chrome (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test_In_Edge (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -272,36 +443,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.hudl.testcases.Tests_LoginModule')
-data.setCell(0, 3, 11241);
+data.setCell(0, 3, 9919);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.hudl.testcases.Tests_LoginModule')
-data.setCell(1, 3, 4183);
+data.setCell(1, 3, 7251);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.hudl.testcases.Tests_LoginModule')
-data.setCell(2, 3, 4092);
+data.setCell(2, 3, 7107);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.hudl.testcases.Tests_LoginModule')
-data.setCell(3, 3, 3998);
+data.setCell(3, 3, 5947);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'com.hudl.testcases.Tests_LoginModule')
-data.setCell(4, 3, 3836);
+data.setCell(4, 3, 3614);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'com.hudl.testcases.Tests_LoginModule')
-data.setCell(5, 3, 3059);
+data.setCell(5, 3, 3502);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.hudl.testcases.Tests_LoginModule')
+data.setCell(6, 3, 3498);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.hudl.testcases.Tests_LoginModule')
+data.setCell(7, 3, 3497);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.hudl.testcases.Tests_LoginModule')
+data.setCell(8, 3, 3448);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.hudl.testcases.Tests_LoginModule')
+data.setCell(9, 3, 3108);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'com.hudl.testcases.Tests_LoginModule')
+data.setCell(10, 3, 2957);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'com.hudl.testcases.Tests_LoginModule')
+data.setCell(11, 3, 2919);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.hudl.testcases.Tests_LoginModule')
+data.setCell(12, 3, 2824);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.hudl.testcases.Tests_LoginModule')
+data.setCell(13, 3, 2683);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -334,95 +537,209 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setValues</span>
-                <span class="method-start">463 ms</span>
+                <span class="method-start">367 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">495 ms</span>
+                <span class="method-start">392 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">report</span>
-                <span class="method-start">1054 ms</span>
+                <span class="method-start">922 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">initiateApp</span>
-                <span class="method-start">1094 ms</span>
+                <span class="method-name">initiateApp(chrome)</span>
+                <span class="method-start">954 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Validate the login page of Hudl.com with valid email and password", "Optional[Login functionality o...)</span>
-                <span class="method-start">8421 ms</span>
+                <span class="method-start">8542 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">19673 ms</span>
+                <span class="method-start">18468 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">initiateApp</span>
-                <span class="method-start">19921 ms</span>
+                <span class="method-name">initiateApp(chrome)</span>
+                <span class="method-start">18792 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Validate the login functionality for invalid email and password", "Optional[Login functionality of ...)</span>
-                <span class="method-start">24119 ms</span>
+                <span class="method-start">21892 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">28213 ms</span>
+                <span class="method-start">25391 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">initiateApp</span>
-                <span class="method-start">28485 ms</span>
+                <span class="method-name">initiateApp(chrome)</span>
+                <span class="method-start">25529 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Validate the login functionality for invalid email and password", "Optional[Login functionality of ...)</span>
-                <span class="method-start">32168 ms</span>
+                <span class="method-start">28542 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">36352 ms</span>
+                <span class="method-start">32041 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">initiateApp</span>
-                <span class="method-start">36546 ms</span>
+                <span class="method-name">initiateApp(chrome)</span>
+                <span class="method-start">32165 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...)</span>
-                <span class="method-start">40054 ms</span>
+                <span class="method-start">35146 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">44053 ms</span>
+                <span class="method-start">38105 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">initiateApp</span>
-                <span class="method-start">44260 ms</span>
+                <span class="method-name">initiateApp(chrome)</span>
+                <span class="method-start">38243 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...)</span>
-                <span class="method-start">48048 ms</span>
+                <span class="method-start">41155 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">51108 ms</span>
+                <span class="method-start">43840 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">initiateApp</span>
-                <span class="method-start">51293 ms</span>
+                <span class="method-name">initiateApp(chrome)</span>
+                <span class="method-start">43986 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...)</span>
-                <span class="method-start">55051 ms</span>
+                <span class="method-start">47398 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">58889 ms</span>
+                <span class="method-start">50319 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateApp(chrome)</span>
+                <span class="method-start">50444 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate the navigation from login page to Website page", "Optional[Login functionality of Hudl.com...)</span>
+                <span class="method-start">53376 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">59324 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">59104 ms</span>
+                <span class="method-start">59448 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test before">
+                <span class="method-name">setValues</span>
+                <span class="method-start">59498 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">59499 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">report</span>
+                <span class="method-start">59515 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateApp(edge)</span>
+                <span class="method-start">59516 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate the login page of Hudl.com with valid email and password", "Optional[Login functionality o...)</span>
+                <span class="method-start">64933 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">72188 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateApp(edge)</span>
+                <span class="method-start">72418 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate the login functionality for invalid email and password", "Optional[Login functionality of ...)</span>
+                <span class="method-start">77083 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">80586 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateApp(edge)</span>
+                <span class="method-start">80779 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate the login functionality for invalid email and password", "Optional[Login functionality of ...)</span>
+                <span class="method-start">85300 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">88409 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateApp(edge)</span>
+                <span class="method-start">88603 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...)</span>
+                <span class="method-start">93600 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">97049 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateApp(edge)</span>
+                <span class="method-start">97408 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...)</span>
+                <span class="method-start">102249 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">105075 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateApp(edge)</span>
+                <span class="method-start">105242 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate if the links in the Login page are accessible", "Optional[Login functionality of Hudl.com]...)</span>
+                <span class="method-start">110016 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">113632 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateApp(edge)</span>
+                <span class="method-start">113790 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate the navigation from login page to Website page", "Optional[Login functionality of Hudl.com...)</span>
+                <span class="method-start">118696 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">125805 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">126005 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">59169 ms</span>
+                <span class="method-start">126030 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

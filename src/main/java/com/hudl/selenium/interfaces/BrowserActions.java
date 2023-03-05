@@ -2,6 +2,7 @@ package com.hudl.selenium.interfaces;
 
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 
 public interface BrowserActions {
@@ -14,7 +15,7 @@ public interface BrowserActions {
 	 * @return 
 	 */
 
-	public void startApp(String browser, String url);
+	public RemoteWebDriver startApp(String browser, String url);
 	
 	/**
 	 * This method will locates all matching element using any given locator
