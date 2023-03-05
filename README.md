@@ -92,7 +92,7 @@ graph TD;
 	@AfterTest --> No Method
 @AfterSuite	--> Reporter (endReport)
 ```
-- The scripts can be run through the below steps
+- **Steps to run** 
   - The system should have java and MVN to run scripts
   - Copy the code from git to the local 
   - Run the below command in command prompt from the project folder.
