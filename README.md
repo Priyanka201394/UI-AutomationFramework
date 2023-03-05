@@ -20,7 +20,10 @@ Creation of UI Automation framework to automate the Hudl login page.
 - Extent reports are used to display the reports.
 
 ### Setup
-- Install Java using the [link](https://phoenixnap.com/kb/install-java-windows) and set the environment variables.
+- Download and install Java from official oracle site or java site using the [link](https://www.oracle.com/uk/java/technologies/downloads/). 
+- Set the environment variables and path for Java (Refer link - https://www.qamadness.com/knowledge-base/how-to-install-maven-and-configure-environment-variables/ )
+- Download maven from official apache site (https://maven.apache.org/download.cgi) and set the environmenet variables and path for Maven in your machine. ( Refer Link - https://www.qamadness.com/knowledge-base/how-to-install-maven-and-configure-environment-variables/)
+- Using command line run commands java -version and mvn -version to confirm the java and maven availability in your machine.
 - Download Eclipse 64 bit and place it in a new folder in the local drive.
 - Create a new Maven project in eclipse and add the below dependencies in the pom.xml file
 ```
@@ -60,8 +63,6 @@ Creation of UI Automation framework to automate the Hudl login page.
 	<version>6.10.0</version>
  </dependency>
 ```
-- The output can be viewed in the form of Extent reports
-- To view the output , after the execution refresh the project and view the reports in (project -> reports -> result.html (open in System editor).
 
 ### Framework Design
 - The Browser Actions and DOM Elements actions are created as interfaces, which is implemented in the BaseMethods which acts as library for Wrapper methods.
@@ -93,10 +94,11 @@ graph TD;
 @AfterSuite	--> Reporter (endReport)
 ```
 - **Steps to run** 
-  - The system should have java and MVN to run scripts
-  - Copy the code from git to the local 
-  - Run the below command in command prompt from the project folder.
-      `mvn install test`
+  - System should have compatible java and MVN versions to run the scripts.
+  - Download and copy the code from git to the local directory.
+  - Open the command line from the project path where the pom.xml file is available.
+  - Run the command `mvn install test` for 1st time run and there after we can run using command `mvn test`
+  - Reports will be saved in the path <ProjectName>/reports/results.html which can be viewed through the system editor and screenshots will be placed in <ProjectName>/reports/images folder
 
 ### Features
 - **Login Feature**
@@ -108,3 +110,8 @@ graph TD;
 - This framework can be extended to perform the validation of all the pages in the Hudl.com application
 - This framework can be extended to use the mail verfication for functionalities such as Sign_in and Reset_Password using Mailinatour dependencies.
 - This framework can be extended to obtain data from excel sheets using the Apachi_POI dependencies.
+- This framework can also be extended to perform API testing through Karate or Rest assured libraries.
+
+**Note**
+- The wider team is using Selenium with BDD, POM hence have used the same. But the language used is Java because of ease of standartisation , libraries and verbosity.
+- The API endpoint of the Login page does not have any 
