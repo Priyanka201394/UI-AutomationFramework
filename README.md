@@ -3,7 +3,6 @@
 - Project Description
 - Tech Stack
 - Setup
-- Assumptions
 - Framework Design
 - Execution flow
 - Features
