@@ -113,3 +113,4 @@ graph TD;
 
 **Note**
 - The wider team is using Selenium with BDD, POM hence have used the same. But the language used is Java because of ease of standartisation , libraries and verbosity.
+- Created a basic Postman API collection to test the login API , since the team is using the same. To execute the tests, download the API collection and import in Postman.  
