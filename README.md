@@ -114,4 +114,3 @@ graph TD;
 
 **Note**
 - The wider team is using Selenium with BDD, POM hence have used the same. But the language used is Java because of ease of standartisation , libraries and verbosity.
-- The API endpoint of the Login page does not have any 
