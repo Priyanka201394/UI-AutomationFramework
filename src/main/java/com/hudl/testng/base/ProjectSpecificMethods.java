@@ -13,7 +13,7 @@ public class ProjectSpecificMethods extends BaseMethods{
 	@Parameters({"browser"})
 	@BeforeMethod
 	public void initiateApp(String browser) {
-		startApp(browser, "https://www.hudl.com/en_gb/");
+		startApp(browser, "https://www.hudl.com/en_gb/" , headlessBrowser);
 		
 	}
 	

@@ -30,7 +30,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.Reporter;
 
 public class BaseMethods extends Reporter implements BrowserActions , ElementActions  {
-	public String usermail,websiteUrl,password;
+	public String usermail,websiteUrl,password,headlessBrowser , browser;
 	public BaseMethods() {
 		Properties prop = new Properties();
 		try {
@@ -39,6 +39,7 @@ public class BaseMethods extends Reporter implements BrowserActions , ElementAct
 			usermail = prop.getProperty("useremail");
 			websiteUrl = prop.getProperty("WebsiteUrl");
 			password = prop.getProperty("password");
+			headlessBrowser = prop.getProperty("Headless");
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
@@ -46,20 +47,30 @@ public class BaseMethods extends Reporter implements BrowserActions , ElementAct
 	public static RemoteWebDriver driver;
 
 
-	public RemoteWebDriver startApp(String browser,  String url) {
+	public RemoteWebDriver startApp(String browser,  String url , String headless) {
 		try {
 			if(browser.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.silentOutput", "true");
-				ChromeOptions opt = new ChromeOptions();
-				opt.addArguments("--headless");
-				WebDriverManager.chromedriver().setup();
-				driver = new ChromeDriver(opt);
+				if(headless=="true") {
+					ChromeOptions opt = new ChromeOptions();
+					opt.addArguments("--headless");
+					WebDriverManager.chromedriver().setup();
+					driver = new ChromeDriver(opt);
+				}else {
+					WebDriverManager.chromedriver().setup();
+					driver = new ChromeDriver();
+				}
 			} else if(browser.equalsIgnoreCase("edge")) {
 				System.setProperty("webdriver.edge.silentOutput", "true");
-				EdgeOptions opt = new EdgeOptions();
-				opt.addArguments("--headless");
-				WebDriverManager.edgedriver().setup();
-				driver = new EdgeDriver(opt);
+				if(headless=="true") {
+					EdgeOptions opt = new EdgeOptions();
+					opt.addArguments("--headless");
+					WebDriverManager.edgedriver().setup();
+					driver = new EdgeDriver(opt);
+				}else {
+					WebDriverManager.edgedriver().setup();
+					driver = new EdgeDriver();
+				}
 			}
 			driver.navigate().to(url);
 			driver.manage().window().maximize();

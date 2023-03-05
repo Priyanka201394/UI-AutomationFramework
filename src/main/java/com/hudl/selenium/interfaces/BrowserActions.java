@@ -15,7 +15,7 @@ public interface BrowserActions {
 	 * @return 
 	 */
 
-	public RemoteWebDriver startApp(String browser, String url);
+	public RemoteWebDriver startApp(String browser, String url , String headless);
 	
 	/**
 	 * This method will locates all matching element using any given locator
