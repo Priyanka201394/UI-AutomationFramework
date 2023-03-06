@@ -99,6 +99,9 @@ graph TD;
   - Open the command line from the project path where the pom.xml file is available.
   - Run the command `mvn install test` for 1st time run and there after we can run using command `mvn test`
   - Reports will be saved in the path <ProjectName>/reports/results.html which can be viewed through the system editor and screenshots will be placed in <ProjectName>/reports/images folder
+  - The view of the extent report.
+  
+  ![Extent_Report](https://github.com/Priyanka201394/UI-AutomationFramework/blob/master/Extent_Report.PNG)
 
 ### Features
 - **Login Feature**
