@@ -51,7 +51,7 @@ public class BaseMethods extends Reporter implements BrowserActions , ElementAct
 		try {
 			if(browser.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.silentOutput", "true");
-				if(headless=="true") {
+				if(headless.equals("true")) {
 					ChromeOptions opt = new ChromeOptions();
 					opt.addArguments("--headless");
 					WebDriverManager.chromedriver().setup();
@@ -62,7 +62,7 @@ public class BaseMethods extends Reporter implements BrowserActions , ElementAct
 				}
 			} else if(browser.equalsIgnoreCase("edge")) {
 				System.setProperty("webdriver.edge.silentOutput", "true");
-				if(headless=="true") {
+				if(headless.equals("true")) {
 					EdgeOptions opt = new EdgeOptions();
 					opt.addArguments("--headless");
 					WebDriverManager.edgedriver().setup();
