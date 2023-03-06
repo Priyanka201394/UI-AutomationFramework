@@ -70,7 +70,7 @@ Creation of UI Automation framework to automate the Hudl login page.
 - The Utility package has the classes related to external applications (Reporter)
 - It follows the BDD approach using Cucumber, where Feature files are created and called by the step definition classes (page class).
 - The testcases are called from the tests class (Runner class) where the features and the step definitions are mapped.
-- The execution is done through the TestNG.xml where the tests classes are called. 
+- The execution is done through the TestNG.xml where the tests classes are called and browsers are defined (currently tests are run in chrome and edge which can be extended)
 - The config.properties file has the properties such as username, password, website_url , Headless ( default value is set to false) for easier access.
 ```mermaid
 graph TD;
