@@ -110,7 +110,7 @@ graph TD;
 	- Negative Test - To validate the login page of Hudl with invalid credentials
 
 ### Enhancements
-- This framework can be extended to perform the automation of all the pages in the Hudl.com application
+- This framework can be extended to perform the automation of all the pages in the Hudl.com application by adding the class, feature and test_cases for each page.
 - This framework can be extended to use the mail verfication for functionalities such as Sign_in and Reset_Password using Mailinatour dependencies.
 - This framework can be extended to interact with data from excel sheets using the Apachi_POI dependencies.
 - This framework can also be extended to perform API testing through Karate or Rest assured libraries.
