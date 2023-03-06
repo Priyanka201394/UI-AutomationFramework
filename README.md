@@ -107,11 +107,12 @@ graph TD;
 	- Negative Test - To validate the login page of Hudl with invalid credentials
 
 ### Enhancements
-- This framework can be extended to perform the validation of all the pages in the Hudl.com application
+- This framework can be extended to perform the automation of all the pages in the Hudl.com application
 - This framework can be extended to use the mail verfication for functionalities such as Sign_in and Reset_Password using Mailinatour dependencies.
-- This framework can be extended to obtain data from excel sheets using the Apachi_POI dependencies.
+- This framework can be extended to interact with data from excel sheets using the Apachi_POI dependencies.
 - This framework can also be extended to perform API testing through Karate or Rest assured libraries.
+- The framework can be deployed in a CICD tool for build, test an deploy and can be configured to run regularly scheduled tests.
 
 **Note**
-- The wider team is using Selenium with BDD, POM hence have used the same. But the language used is Java because of ease of standartisation , libraries and verbosity.
-- Created a basic Postman API collection to test the login API , since the team is using the same. To execute the tests, download the API collection and import in Postman.  
+- Considering the assumption that a wider team is using Selenium with BDD & POM, I have implemented the framework using the same. However I have considered Java as a scripting language due to my personal knowledge and also ease of standardisation, libraries and verbosity.
+- On top of implementing the UI framework for login, I have created the Postman API collections with assertions to test the Login API with consideration that the team has access to the Postman tool. This collection will become handy to test the Login service as soon as the API is deployed even before UI is made available. To execute the API tests, download the API collections and import them in Postman then run collections. 
